@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrationform</title>
+</head>
+<body align= "center">
+<h1>Legacy 2k22</h1>
+<video width="800" height="500" autoplay muted loop src="/resources/videos/video.mp4"></video>
+<div>
+    <h2>Sports</h2>
+<img width=600 height= 400 src="/resources/images/sports.jfif">
+    <tr>
+        <h2>Sports</h2>
+        <td>
+            <select>
+                <option>select</option>
+                <option>circket</option>
+                <option>football</option>
+                <option>basket ball</option>
+            </select>
+        </td>
+    </tr>
+    <div>
+<img width=600 height= 400 src="/resources/images/culture.jfif">
+        <tr>
+            <h2>culturals</h2>
+            <td>
+                <select>
+                    <option>select</option>
+                    <option>dance</option>
+                    <option>singing</option>
+                    <option>Drama</option>
+                    <option>comedy</option>
+                </select>
+            </td>
+        </tr>
+        <div>
+<img width=600 height= 400 src="/resources/images/tech.jfif">
+            <tr>
+                <h2>techno</h2>
+                <td>
+                    <select>
+                        <option>select</option>
+                        <option>poster presentation</option>
+                        <option>Paper presentation</option>
+                        <option>workshop</option>
+                    </select>
+                </td>
+            </tr>
+</div>
+        <form id="form" value="register">
+            <table>
+                <tr>
+                    <lable>Name</lable>
+                    <input name="name" type="text" required><div>
+                    <lable>Mobile.No</lable>
+                    <input Mobile.No="number" type="number" required><div>
+                    <lable>Email</lable>
+                    <input Email="email" type="email" required><div>
+                    <div>
+                    <lable>college</lable>
+                    <input college="college" type="text" required><div>
+                    <lable>Roll.no</lable>
+                    <input Roll.no="digit" type="digit" required><div>
+                    <lable>Branch</lable>
+                    <input Branch="branch" type="text" required><div>
+                    <lable>Year of studying</lable>
+                    <input year="digit" type="digit" required><div>
+                        Gender:
+                        <input type="radio"  name="female">female
+                            <input type="radio"  name="male">male
+                        <div>
+                       <button onclick="myFunction()">Submit</button>
+                        </div>
+                </tr>
+            </table>
+        </form>
+
+        <script>
+        function myFunction() {
+            let myVariable;
+            let form = register(document.getElementById("form").value);
+            
+     if (form) 
+    {
+    document.write("registration is not successful")
+    }
+    else{
+         document.write("registration is successful")
+         }
+        }
+</script>
+</body>
+</html>
